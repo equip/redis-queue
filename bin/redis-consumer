@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+use Auryn\Injector;
+use Equip\RedisQueue\Configuration\DefaultConfigurationSet;
+use Equip\RedisQueue\Daemon;
+
+foreach ([
+
+    // Run from vendor/bin/ when installed as a dependency
+    '../autoload.php',
+
+    // Run from bin/ when installed as a git repo clone
+    '../vendor/autoload.php',
+
+] as $path) {
+    $file = __DIR__ . '/' . $path;
+    if (file_exists($file)) {
+        require $file;
+    }
+}
+
+$injector = new Injector;
+$configuration = new DefaultConfigurationSet;
+$configuration->apply($injector);
+$daemon = $injector->make(Daemon::class);
+$daemon->run();

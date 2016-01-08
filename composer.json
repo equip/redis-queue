@@ -1,0 +1,30 @@
+{
+    "name": "equip/redis-queue",
+    "description": "Small library for using Redis as a job queue",
+    "type": "library",
+    "license": "MIT",
+    "prefer-stable": true,
+    "require": {
+        "aura/cli": "^2",
+        "equip/command": "^1",
+        "equip/framework": "^1",
+        "predis/predis": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Equip\\RedisQueue\\": "src"
+        }
+    },
+    "require-dev": {
+        "phake/phake": "^2",
+        "phpunit/phpunit": "^4"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EquipTests\\RedisQueue\\": "tests"
+        }
+    },
+    "bin": [
+        "bin/redis-consumer"
+    ]
+}
