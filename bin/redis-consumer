@@ -15,7 +15,7 @@ foreach ([
 
 ] as $path) {
     $file = __DIR__ . '/' . $path;
-    if (file_exists($file)) {
+    if (is_file($file)) {
         require $file;
     }
 }
