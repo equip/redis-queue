@@ -1,5 +1,11 @@
 # Equip Redis Queue
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/equip/redis-queue.svg)](https://packagist.org/packages/equip/redis-queue)
+[![License](https://img.shields.io/packagist/l/equip/redis-queue.svg)](https://github.com/equip/redis-queue/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/equip/redis-queue.svg)](https://travis-ci.org/equip/redis-queue)
+[![Code Coverage](https://scrutinizer-ci.com/g/equip/redis-queue/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/equip/redis-queue/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/equip/redis-queue/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/equip/redis-queue/?branch=master)
+
 A small library for using [Redis](http://redis.io) as a job queue in [Equip](http://equipframework.readthedocs.org) applications.
 
 ## Installation
