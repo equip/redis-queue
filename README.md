@@ -1,3 +1,7 @@
+# Abandoned
+
+This library has been superseded by: [equip/queue](https://github.com/equip/queue)
+
 # Equip Redis Queue
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/equip/redis-queue.svg)](https://packagist.org/packages/equip/redis-queue)
